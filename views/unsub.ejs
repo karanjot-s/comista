@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comista</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Pacifico&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="/css/new_user.css">
+</head>
+<body>
+  <nav>
+    <h2>COMISTA</h2>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/users/new" class="active">Get Comics</a></li>
+      <li><a href="/users/unsubscribe" class="gray">Unsubscribe</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="title">
+      <h2>Unsubsribe from <span class="comista">COMISTA</span> in just 2 Steps:</h2>
+      <ol>
+        <li>Enter your email subscribed to <span class="comista">COMISTA</span></li>
+        <li>Verify your email</li>
+      </ol>
+      <p>Once done, you will stop recieving random comics.</p>
+    </section>
+    <section class="form">
+      <div class="form-div">
+        <p><span class="imp">Unsubscribe</span> Now</p>
+        <form action="/users/unsubscribe" method="post">
+          <input type="email" name="email" placeholder="Enter Email">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,202 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #252525;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 15px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #04293b;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #063a53;
+}
+
+nav {
+  background-color: #34b3f1;
+  padding: 1rem 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+nav h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  font-family: "Pacifico", cursive;
+  text-shadow: #ffffff5e 0 0 0.5rem;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a.active {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.btn {
+  background-color: #34b3f1;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  -webkit-box-shadow: rgba(52, 179, 241, 0.58) 0 0 1rem 3px;
+          box-shadow: rgba(52, 179, 241, 0.58) 0 0 1rem 3px;
+}
+
+.btn:hover {
+  background-color: #0c7cb3;
+}
+
+.comista {
+  font-family: "Pacifico", cursive;
+  font-size: 80%;
+}
+
+.imp {
+  background: #f15412;
+  color: #ffffff;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/img/comics_bg2.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/comics_bg2.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main {
+  padding: 0 10vw;
+  padding-top: 4.6rem;
+}
+
+.card {
+  background: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10vh auto;
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  -webkit-box-shadow: 0px 8px 11px black;
+          box-shadow: 0px 8px 11px black;
+  max-width: 1024px;
+}
+
+.card p {
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+
+.card.true h1 {
+  color: #009c00;
+}
+
+.card.true .btn {
+  background-color: #009c00;
+  -webkit-box-shadow: rgba(0, 156, 0, 0.58) 0 0 1rem 3px;
+          box-shadow: rgba(0, 156, 0, 0.58) 0 0 1rem 3px;
+}
+
+.card.true .btn:hover {
+  background-color: #003600;
+}
+
+.card.false h1 {
+  color: #bf0000;
+}
+
+.card.false .btn {
+  background-color: #bf0000;
+  -webkit-box-shadow: rgba(191, 0, 0, 0.58) 0 0 1rem 3px;
+          box-shadow: rgba(191, 0, 0, 0.58) 0 0 1rem 3px;
+}
+
+.card.false .btn:hover {
+  background-color: #590000;
+}
+/*# sourceMappingURL=msg.css.map */

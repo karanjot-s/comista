@@ -1,0 +1,65 @@
+@import "./base.scss";
+
+$success: #009c00;
+$error: #bf0000;
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/comics_bg2.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main {
+  padding: 0 10vw;
+  padding-top: $nav-height;
+}
+
+.card {
+  background: white;
+  width: fit-content;
+  margin: 10vh auto;
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+  box-shadow: 0px 8px 11px rgb(0, 0, 0);
+  max-width: 1024px;
+
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.card.true {
+  h1 {
+    color: $success;
+  }
+
+  .btn {
+    background-color: $success;
+    box-shadow: rgba($success, 0.58) 0 0 1rem 3px;
+
+    &:hover {
+      background-color: darken($success, 20%);
+    }
+  }
+}
+
+.card.false {
+  h1 {
+    color: $error;
+  }
+
+  .btn {
+    background-color: $error;
+    box-shadow: rgba($error, 0.58) 0 0 1rem 3px;
+
+    &:hover {
+      background-color: darken($error, 20%);
+    }
+  }
+}
