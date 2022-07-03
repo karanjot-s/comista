@@ -1,11 +1,11 @@
 {
   "name": "dailycomic",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon app.js",
-    "start": "node app.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "axios": "^0.27.2",
